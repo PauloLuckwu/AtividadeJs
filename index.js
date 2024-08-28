@@ -1,6 +1,10 @@
-const nome = prompt('Digite seu nome')
-const sobrenome = prompt('Digite seu sobrenome')
-const anonasci = parseInt(prompt('Digite seu ano de nascimento'))
-const ano = 2024
+function calculadoraIcms () {
+    const valor1 = Number(prompt("Insira o valor de compra"))
+    const customin = (valor1+valor1*0.20)
+    const formatado = customin.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+    alert("O custo total do produto é de" +(formatado))
+  }
+  
+  calculadoraIcms()
 
-alert(`Olá dr(a) ${nome} ${sobrenome}, você tem ${ano-anonasci} anos`)
+
